@@ -2,6 +2,6 @@
   "name": "falconx-site",
   "version": "1.0.0",
   "scripts": {
-    "build": "mkdir -p dist && cp index.html dist/index.html && cp styles.css dist/styles.css && cp -r assets dist/assets"
+    "build": "mkdir -p dist && cp index.html dist/index.html && cp styles.css dist/styles.css"
   }
 }
