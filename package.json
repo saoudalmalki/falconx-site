@@ -1,1 +1,7 @@
-{"scripts":{"start":"vite --host 0.0.0.0","build":"mkdir -p dist && cp -r index.html styles.css assets dist/"},"dependencies":{"@vitejs/plugin-react":"latest","vite":"latest","react":"latest","react-dom":"latest","framer-motion":"latest","lucide-react":"latest"},"devDependencies":{}}
+{
+  "name": "falconx-site",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "mkdir -p dist && cp index.html dist/index.html && cp styles.css dist/styles.css && cp -r assets dist/assets"
+  }
+}
