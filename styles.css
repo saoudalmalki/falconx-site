@@ -8,14 +8,47 @@ body {
   background: #000;
 }
 
-.hero {
+.site {
+  position: relative;
   width: 100%;
-  min-height: 100vh;
-  background: #000;
+  max-width: 1536px;
+  margin: 0 auto;
 }
 
 .hero-img {
   width: 100%;
-  height: auto;
   display: block;
+}
+
+.hotspot {
+  position: absolute;
+  display: block;
+}
+
+.whatsapp-main {
+  left: 4%;
+  top: 49%;
+  width: 10%;
+  height: 5%;
+}
+
+.call-main {
+  left: 15%;
+  top: 49%;
+  width: 10%;
+  height: 5%;
+}
+
+.instagram {
+  right: 11%;
+  bottom: 5%;
+  width: 4%;
+  height: 5%;
+}
+
+.whatsapp-footer {
+  right: 6%;
+  bottom: 5%;
+  width: 4%;
+  height: 5%;
 }
