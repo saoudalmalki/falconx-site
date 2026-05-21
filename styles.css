@@ -49,18 +49,22 @@ body {
   width: 16%;
   height: 8%;
 }
-.contact {
-  left: 10.5%;
-  top: 37.5%;
-  width: 16%;
-  height: 8%;
-}
-
-/* للجوال فقط */
 @media (max-width: 768px) {
-
-  .hotspot {
-    transform: scale(1.15);
+  .site {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
   }
 
+  .hero-img {
+    width: auto;
+    height: 100vh;
+    max-width: none;
+    object-fit: cover;
+    transform: translateX(28%);
+  }
+
+  .hotspot {
+    transform: scale(1.25);
+  }
 }
