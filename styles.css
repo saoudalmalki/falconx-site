@@ -51,20 +51,20 @@ body {
 }
 @media (max-width: 768px) {
   .site {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    width: 100%;
+    max-width: 1536px;
+    margin: 0 auto;
+    overflow: visible;
   }
 
   .hero-img {
-    width: auto;
-    height: 100vh;
-    max-width: none;
-    object-fit: cover;
-    transform: translateX(28%);
+    width: 100%;
+    height: auto;
+    display: block;
+    transform: none;
   }
 
-  .hotspot {
-    transform: scale(1.25);
+  body {
+    background: #000;
   }
 }
