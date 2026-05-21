@@ -49,3 +49,18 @@ body {
   width: 16%;
   height: 8%;
 }
+.contact {
+  left: 10.5%;
+  top: 37.5%;
+  width: 16%;
+  height: 8%;
+}
+
+/* للجوال فقط */
+@media (max-width: 768px) {
+
+  .hotspot {
+    transform: scale(1.15);
+  }
+
+}
