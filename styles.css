@@ -1,54 +1,30 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background: #000;
-}
-
-.site {
-  position: relative;
-  width: 100%;
-  max-width: 1536px;
-  margin: 0 auto;
-}
-
-.hero-img {
-  width: 100%;
-  display: block;
-}
-
 .hotspot {
   position: absolute;
   display: block;
+  border-radius: 50%;
 }
 
-.whatsapp-main {
-  left: 4%;
-  top: 49%;
-  width: 10%;
-  height: 5%;
-}
-
-.call-main {
-  left: 15%;
-  top: 49%;
-  width: 10%;
-  height: 5%;
-}
-
+/* Instagram */
 .instagram {
-  right: 11%;
-  bottom: 5%;
-  width: 4%;
-  height: 5%;
+  right: 15.8%;
+  bottom: 3.1%;
+  width: 2.7%;
+  height: 4.8%;
 }
 
-.whatsapp-footer {
-  right: 6%;
-  bottom: 5%;
-  width: 4%;
-  height: 5%;
+/* WhatsApp */
+.whatsapp {
+  right: 11.7%;
+  bottom: 3.1%;
+  width: 2.7%;
+  height: 4.8%;
+}
+
+/* تواصل معنا (زر فوق) */
+.contact {
+  left: 13.5%;
+  top: 39%;
+  width: 10%;
+  height: 5.5%;
+  border-radius: 12px;
 }
