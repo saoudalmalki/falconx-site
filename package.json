@@ -1,0 +1,1 @@
+{"name":"falconx-home-stage1","version":"1.0.0","private":true,"scripts":{"build":"mkdir -p dist && cp index.html styles.css script.js dist/ && cp -r assets dist/assets"}}
