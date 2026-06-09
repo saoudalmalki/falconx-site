@@ -12,14 +12,14 @@ nav a:hover{color:var(--red2)}
 .quote{border:1px solid var(--red);padding:13px 22px;border-radius:10px}
 .menu{display:none;background:#111;color:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-size:22px}
 
-.hero{position:relative;min-height:100vh;padding:130px 5vw 80px;background:radial-gradient(circle at 70% 45%,rgba(255,40,20,.18),transparent 32%),linear-gradient(110deg,#000 0%,#070707 48%,#141414 100%);overflow:hidden}
+.hero{position:relative;min-height:100vh;padding:0;background:linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.25)),url("assets/hero-falconx.jpg");background-size:cover;background-position:center center;background-repeat:no-repeat;overflow:hidden}
 .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.04),transparent 22%),radial-gradient(circle at 35% 55%,rgba(255,255,255,.08),transparent 30%);opacity:.75}
-.road{position:absolute;left:-10%;right:-10%;bottom:-10%;height:34%;background:linear-gradient(180deg,transparent,#090909 35%,#000);transform:skewY(-4deg)}
-.red-light{position:absolute;height:3px;background:linear-gradient(90deg,transparent,var(--red2),transparent);box-shadow:0 0 24px red}
+.road{display:none;}
+.red-light{display:none;}
 .red-light.one{width:55%;right:5%;bottom:20%;transform:rotate(-6deg)}
 .red-light.two{width:35%;left:5%;top:34%;transform:rotate(-12deg)}
 
-.hero-content{position:relative;z-index:3;max-width:720px;padding-top:20px}
+.hero-content{display:none;}
 .hero-logo{width:min(620px,82vw);height:auto;margin-bottom:22px;display:block;object-fit:contain;background:#000;filter:drop-shadow(0 20px 45px rgba(0,0,0,.8));border-radius:10px}
 h1{font-size:clamp(44px,6vw,82px);line-height:1.1;margin-bottom:18px;text-shadow:0 15px 45px #000}
 .hero p{font-size:clamp(18px,2.1vw,24px);line-height:1.8;color:#d8d8d8;max-width:650px}
@@ -28,7 +28,7 @@ h1{font-size:clamp(44px,6vw,82px);line-height:1.1;margin-bottom:18px;text-shadow
 .btn.red{background:linear-gradient(135deg,var(--red2),#8e0000);box-shadow:0 18px 45px rgba(212,0,0,.35)}
 .btn.outline{border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.04)}
 
-.truck-shape{position:absolute;right:2%;bottom:11%;width:44vw;height:48vh;z-index:2;filter:drop-shadow(0 26px 70px rgba(0,0,0,.85))}
+.truck-shape{display:none;}
 .truck-cab{position:absolute;right:58%;bottom:0;width:36%;height:70%;background:linear-gradient(135deg,#242424,#050505);border:1px solid rgba(255,255,255,.12);border-radius:26px 18px 8px 8px}
 .truck-cab:before{content:"";position:absolute;top:16%;right:12%;width:68%;height:28%;background:#070707;border:1px solid rgba(255,255,255,.12);border-radius:8px}
 .truck-cab:after{content:"";position:absolute;bottom:8%;right:14%;width:36px;height:36px;background:#111;border:8px solid #2a2a2a;border-radius:50%;box-shadow:-120px 0 0 #111,-120px 0 0 8px #2a2a2a}
