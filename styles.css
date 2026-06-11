@@ -1,0 +1,183 @@
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html, body{
+  width:100%;
+  min-height:100%;
+  background:#000;
+  overflow:hidden;
+  font-family:Arial,Tahoma,sans-serif;
+}
+
+.page{
+  width:100vw;
+  height:100vh;
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
+  background:#000;
+  overflow:hidden;
+}
+
+/* التصميم نفسه */
+.design-wrap{
+  position:relative;
+  width:100vw;
+  aspect-ratio:16 / 9;
+  max-height:100vh;
+  background:#000;
+  overflow:hidden;
+}
+
+.design-img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  display:block;
+}
+
+/* الأزرار المخفية */
+.hotspot{
+  position:absolute;
+  display:block;
+  z-index:50;
+  background:rgba(255,0,0,0);
+  border:0;
+  outline:0;
+  cursor:pointer;
+  -webkit-tap-highlight-color:rgba(255,0,0,.18);
+}
+
+/* أزرار داخل الصورة: خدماتنا + تواصل معنا */
+.hs-services{
+  left:4.8%;
+  top:40.5%;
+  width:10.8%;
+  height:6.0%;
+}
+.hs-contact-btn{
+  left:16.1%;
+  top:40.5%;
+  width:11.8%;
+  height:6.0%;
+}
+
+/* الاتصال والإيميل في الأسفل */
+.hs-phone{
+  left:22.6%;
+  bottom:5.0%;
+  width:9.8%;
+  height:5.6%;
+}
+.hs-email{
+  left:35.7%;
+  bottom:5.0%;
+  width:17.0%;
+  height:5.6%;
+}
+
+/* أيقونات السوشيال يمين أسفل */
+.hs-instagram{
+  right:11.2%;
+  bottom:5.0%;
+  width:3.8%;
+  height:5.8%;
+}
+.hs-whatsapp{
+  right:7.6%;
+  bottom:5.0%;
+  width:3.7%;
+  height:5.8%;
+}
+.hs-tiktok{
+  right:4.1%;
+  bottom:5.0%;
+  width:3.5%;
+  height:5.8%;
+}
+.hs-facebook{
+  right:.7%;
+  bottom:5.0%;
+  width:3.4%;
+  height:5.8%;
+}
+
+.hidden-section{
+  position:absolute;
+  left:-9999px;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
+/* الجوال: الصورة تظهر أعلى الصفحة، بدون هيدر وبدون أزرار ظاهرة */
+@media(max-width:900px){
+  .page{
+    align-items:flex-start;
+  }
+
+  .design-wrap{
+    width:100vw;
+    aspect-ratio:16 / 9;
+  }
+
+  /* نفس النسب لأن التصميم صورة واحدة */
+  .hs-services{
+    left:4.8%;
+    top:40.5%;
+    width:10.8%;
+    height:6.0%;
+  }
+  .hs-contact-btn{
+    left:16.1%;
+    top:40.5%;
+    width:11.8%;
+    height:6.0%;
+  }
+
+  .hs-phone{
+    left:22.6%;
+    bottom:5.0%;
+    width:9.8%;
+    height:5.6%;
+  }
+  .hs-email{
+    left:35.7%;
+    bottom:5.0%;
+    width:17.0%;
+    height:5.6%;
+  }
+
+  .hs-instagram{
+    right:11.2%;
+    bottom:5.0%;
+    width:3.8%;
+    height:5.8%;
+  }
+  .hs-whatsapp{
+    right:7.6%;
+    bottom:5.0%;
+    width:3.7%;
+    height:5.8%;
+  }
+  .hs-tiktok{
+    right:4.1%;
+    bottom:5.0%;
+    width:3.5%;
+    height:5.8%;
+  }
+  .hs-facebook{
+    right:.7%;
+    bottom:5.0%;
+    width:3.4%;
+    height:5.8%;
+  }
+}
+
+/* لو تبي تختبر أماكن الأزرار، أضف class debug لأي hotspot */
+.hotspot.debug{
+  background:rgba(255,0,0,.30);
+}
